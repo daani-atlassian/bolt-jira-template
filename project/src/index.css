@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --atlassian-blue: #0052cc;
+  --atlassian-blue-light: #0065ff;
+  --atlassian-green: #00875a;
+  --atlassian-green-light: #36b37e;
+  --atlassian-yellow: #ffab00;
+  --atlassian-red: #de350b;
+  --atlassian-purple: #6554c0;
+  --atlassian-gray-50: #f7f8f9;
+  --atlassian-gray-100: #f1f2f4;
+  --atlassian-gray-200: #dfe1e6;
+  --atlassian-gray-300: #c1c7d0;
+  --atlassian-gray-400: #8993a4;
+  --atlassian-gray-500: #6b778c;
+  --atlassian-gray-600: #505f79;
+  --atlassian-gray-700: #42526e;
+  --atlassian-gray-800: #253858;
+  --atlassian-gray-900: #172b4d;
+}
+
+/* Hide scrollbars while keeping scroll functionality */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+/* Selected cell styling */
+.selected-cell {
+  background-color: #deebff !important;
+  position: relative;
+  box-shadow: inset 0 0 0 2px #0052cc !important;
+  border-radius: 4px;
+}
+
+/* Hover effect for selectable cells */
+.selectable-cell {
+  cursor: pointer;
+  user-select: none;
+}</action>
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-feature-settings: 'tnum';
+}
+
+/* Global text selection transparency */
+::selection {
+  background: transparent;
+}
+
+::-moz-selection {
+  background: transparent;
+}
